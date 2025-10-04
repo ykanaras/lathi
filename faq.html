@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ | Lathi Soaps</title>
+  <meta name="description" content="Handcrafted soap made with real Greek olive oil. Small-batch, cold-processed bars by Lathi Soaps." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav" aria-label="Primary">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" width="32" height="32" alt="" /><span>Lathi Soaps</span></a>
+      <div class="nav-links"></div>
+    </div>
+  </header>
+
+  <main class="container">
+<main class="container">
+  <section class="section faq" aria-labelledby="faq-title">
+    <h2 id="faq-title">Frequently asked questions</h2>
+    <details>
+      <summary>Do you have a physical store?</summary>
+      <p>No — we operate online only and ship directly to customers.</p>
+    </details>
+    <details>
+      <summary>What’s cold-process soap?</summary>
+      <p>Cold-processing keeps temperatures low during saponification to preserve the delicate qualities of olive oil and botanicals. Bars then cure for several weeks for a gentle, long-lasting lather.</p>
+    </details>
+    <details>
+      <summary>Are your bars palm-free and vegan?</summary>
+      <p>Yes. We rely on olive oil and other plant oils, and we do not use animal-derived ingredients.</p>
+    </details>
+    <details>
+      <summary>How long does a bar last?</summary>
+      <p>With proper drainage between uses, most bars last 3–5 weeks of daily use.</p>
+    </details>
+  </section>
+</main>
+</main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div class="foot-grid">
+        <div>
+          <div class="brand"><img src="assets/logo.svg" width="32" height="32" alt="" /><span>Lathi Soaps</span></div>
+          <small>Real Greek olive oil • Cold-processed</small>
+        </div>
+        <div>
+          <strong>Navigate</strong>
+          <div><a href="shop.html">Shop</a></div>
+          <div><a href="about.html">About</a></div>
+          <div><a href="faq.html">FAQ</a></div>
+          <div><a href="contact.html">Contact</a></div>
+        </div>
+        <div>
+          <strong>Store</strong>
+          <div><small>Online-only • Ships direct</small></div>
+          <div class="pay-icons"><span>Visa</span><span>Mastercard</span><span>AmEx</span><span>PayPal</span><span>Apple Pay</span></div>
+        </div>
+      </div>
+      <small style="display:block;margin-top:18px">© <span id="year"></span> Lathi Soaps. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer (present on all pages) -->
+  <div class="overlay" id="overlay" tabindex="-1" aria-hidden="true"></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-labelledby="cartTitle" aria-modal="true">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px">
+      <h3 id="cartTitle">Your Cart</h3>
+      <button class="btn btn-outline" id="closeCart" aria-label="Close cart">Close</button>
+    </div>
+    <div id="cartLines" aria-live="polite" aria-relevant="additions removals"></div>
+    <div class="totals">
+      <div style="display:flex; justify-content:space-between"><strong>Subtotal</strong><strong id="subtotal">$0.00</strong></div>
+      <div style="display:flex; justify-content:space-between"><span>Shipping</span><span id="shipping">$5.00</span></div>
+      <div style="display:flex; justify-content:space-between"><span>Tax</span><span id="tax">$0.00</span></div>
+      <div style="display:flex; justify-content:space-between; font-size:1.1rem"><strong>Total</strong><strong id="grand">$5.00</strong></div>
+      <p class="fine">Flat shipping shows as $5. Update rates as needed. Taxes are illustrative only.</p>
+    </div>
+
+    <!-- Checkout form appears on shop page; on other pages it's omitted -->
+    <form class="checkout" id="checkoutForm" style="display:none"></form>
+  </aside>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
