@@ -3,12 +3,12 @@ const EMAIL_TO = 'lathisoaps@example.com'; // TODO: replace with your email
 const STRIPE_PAYMENT_LINK = ''; // Optional: paste your Stripe Payment Link
 
 const PRODUCTS = [
-  { id: 'classic-olive', name: 'Classic Olive Bar', price: 8.00, img: 'https://images.unsplash.com/photo-1574267432553-4b462408c8b8?q=80&w=1200&auto=format&fit=crop', sizes: ['Standard 4.5oz','Mini 2oz'], scent: ['Unscented','Lavender','Lemon'] },
-  { id: 'lavender-olive', name: 'Lavender Olive Bar', price: 9.50, img: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop', sizes: ['Standard 4.5oz','Large 6oz'], scent: ['Lavender'] },
-  { id: 'herbal-trio', name: 'Herbal Trio Set', price: 24.00, img: 'https://images.unsplash.com/photo-1534237710431-e2fc4da9c39c?q=80&w=1200&auto=format&fit=crop', sizes: ['Gift Set'], scent: ['Mixed'] },
-  { id: 'olive-honey', name: 'Olive & Oat Bar', price: 10.00, img: 'https://images.unsplash.com/photo-1584305574644-3b58a2451b2b?q=80&w=1200&auto=format&fit=crop', sizes: ['Standard 4.5oz'], scent: ['Unscented'] },
-  { id: 'citrus-zest', name: 'Citrus Zest Bar', price: 9.00, img: 'https://images.unsplash.com/photo-1556228453-efd1d3a78085?q=80&w=1200&auto=format&fit=crop', sizes: ['Standard 4.5oz'], scent: ['Lemon','Sweet Orange'] },
-  { id: 'variety-pack', name: 'Variety 4-Pack', price: 30.00, img: 'https://images.unsplash.com/photo-1556228578-8a3d6d9f3c55?q=80&w=1200&auto=format&fit=crop', sizes: ['Assorted'], scent: ['Mixed'] },
+  { id: 'classic-olive', name: 'Classic Olive Bar', price: 8.00, img: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1400&auto=format&fit=crop', sizes: ['Standard 4.5oz','Mini 2oz'], scent: ['Unscented','Lavender','Lemon'] },
+  { id: 'lavender-olive', name: 'Lavender Olive Bar', price: 9.50, img: 'https://images.unsplash.com/photo-1610874150309-1a9f1b06ad2d?q=80&w=1400&auto=format&fit=crop', sizes: ['Standard 4.5oz','Large 6oz'], scent: ['Lavender'] },
+  { id: 'herbal-trio', name: 'Herbal Trio Set', price: 24.00, img: 'https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1400&auto=format&fit=crop', sizes: ['Gift Set'], scent: ['Mixed'] },
+  { id: 'olive-honey', name: 'Olive & Oat Bar', price: 10.00, img: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400&auto=format&fit=crop', sizes: ['Standard 4.5oz'], scent: ['Unscented'] },
+  { id: 'citrus-zest', name: 'Citrus Zest Bar', price: 9.00, img: 'https://images.unsplash.com/photo-1604335399105-a0d7b2d05f5d?q=80&w=1400&auto=format&fit=crop', sizes: ['Standard 4.5oz'], scent: ['Lemon','Sweet Orange'] },
+  { id: 'variety-pack', name: 'Variety 4-Pack', price: 30.00, img: 'https://images.unsplash.com/photo-1541668274761-03a34cf09f4b?q=80&w=1400&auto=format&fit=crop', sizes: ['Assorted'], scent: ['Mixed'] },
 ];
 
 function money(n){ return `$${n.toFixed(2)}`; }
