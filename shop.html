@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop | Lathi Soap</title>
+
+  <title>Shop Soaps | Lathi Soap</title>
+  <meta name="description" content="Shop handmade Greek olive oil soaps from Lathi Soap. Lavender, Rose, Citrus, Gardenia, and Coconut Vanilla.">
+
   <link rel="stylesheet" href="style.css" />
+
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAV8G4yaUPBLrOnfq9V-P3yVW0bPYqWQCj0mOvDuFU14LGY0H-R8PHR5h3snTvbEi2UrcwZRP5_cd8tzk&components=hosted-buttons&enable-funding=venmo&currency=USD">
+  </script>
 </head>
 
 <body>
@@ -17,7 +24,7 @@
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
   <a href="shop.html">Shop</a>
-  <a href="contact.html">Checkout</a>
+  <a href="checkout.html">Checkout</a>
 </nav>
 
 <section>
@@ -25,7 +32,7 @@
 
   <p class="center">
     Each bar is handmade with olive oil from our family farm in Sparta, Greece.
-    Choose your scent, quantity, then checkout securely through PayPal.
+    Select your favorite scent and checkout securely through PayPal.
   </p>
 
   <div class="products">
@@ -33,86 +40,71 @@
     <div class="card">
       <img src="soap-lavender.jpg" alt="Lavender Soap" class="product-img">
       <h3>Lavender</h3>
-      <p>Calming lavender soap that gently cleanses while leaving skin soft and lightly scented.</p>
-      <p><strong>$6.50</strong></p>
+      <p>Calming lavender soap that gently cleanses while leaving skin soft, refreshed, and lightly scented.</p>
+      <p class="price">$6.50</p>
 
-      <label>Quantity:</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-
-      <a class="button" href="https://www.paypal.com/ncp/payment/XGMF5RPPQ8G36" target="_blank">Buy Now</a>
+      <div id="paypal-container-LAVENDER"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "REPLACE_WITH_LAVENDER_BUTTON_ID"
+        }).render("#paypal-container-LAVENDER");
+      </script>
     </div>
 
     <div class="card">
       <img src="soap-rose.jpg" alt="Rose Soap" class="product-img">
       <h3>Rose</h3>
       <p>A delicate rose-scented bar that leaves skin feeling smooth, soft, and refreshed.</p>
-      <p><strong>$6.50</strong></p>
+      <p class="price">$6.50</p>
 
-      <label>Quantity:</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-
-      <a class="button" href="https://www.paypal.com/ncp/payment/XGMF5RPPQ8G36" target="_blank">Buy Now</a>
+      <div id="paypal-container-ROSE"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "REPLACE_WITH_ROSE_BUTTON_ID"
+        }).render("#paypal-container-ROSE");
+      </script>
     </div>
 
     <div class="card">
       <img src="soap-citrus.jpg" alt="Citrus Soap" class="product-img">
       <h3>Citrus</h3>
       <p>Bright and energizing citrus soap with a crisp, zesty scent and gentle cleanse.</p>
-      <p><strong>$6.50</strong></p>
+      <p class="price">$6.50</p>
 
-      <label>Quantity:</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-
-      <a class="button" href="https://www.paypal.com/ncp/payment/XGMF5RPPQ8G36" target="_blank">Buy Now</a>
+      <div id="paypal-container-CITRUS"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "REPLACE_WITH_CITRUS_BUTTON_ID"
+        }).render("#paypal-container-CITRUS");
+      </script>
     </div>
 
     <div class="card">
       <img src="soap-gardenia.jpg" alt="Gardenia Soap" class="product-img">
       <h3>Gardenia</h3>
       <p>Luxurious floral soap with the elegant scent of blooming gardenias.</p>
-      <p><strong>$6.50</strong></p>
+      <p class="price">$6.50</p>
 
-      <label>Quantity:</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-
-      <a class="button" href="https://www.paypal.com/ncp/payment/XGMF5RPPQ8G36" target="_blank">Buy Now</a>
+      <div id="paypal-container-GARDENIA"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "REPLACE_WITH_GARDENIA_BUTTON_ID"
+        }).render("#paypal-container-GARDENIA");
+      </script>
     </div>
 
     <div class="card">
       <img src="soap-coconut-vanilla.jpg" alt="Coconut Vanilla Soap" class="product-img">
       <h3>Coconut Vanilla</h3>
       <p>A warm blend of creamy coconut and sweet vanilla for a cozy tropical scent.</p>
-      <p><strong>$6.50</strong></p>
+      <p class="price">$6.50</p>
 
-      <label>Quantity:</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-
-      <a class="button" href="https://www.paypal.com/ncp/payment/XGMF5RPPQ8G36" target="_blank">Buy Now</a>
+      <div id="paypal-container-COCONUT"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "REPLACE_WITH_COCONUT_VANILLA_BUTTON_ID"
+        }).render("#paypal-container-COCONUT");
+      </script>
     </div>
 
   </div>
@@ -123,12 +115,16 @@
     <p>Mix and match your favorite scents.</p>
     <p>$5.99 flat-rate shipping</p>
 
-    <a class="button" href="YOUR_BUNDLE_PAYPAL_LINK" target="_blank">
-      Buy 5 Soap Bundle
-    </a>
+    <div id="paypal-container-BUNDLE"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "REPLACE_WITH_BUNDLE_BUTTON_ID"
+      }).render("#paypal-container-BUNDLE");
+    </script>
 
-    <p style="margin-top: 15px;">
-      After checkout, email your scent choices to <strong>lathisoap@gmail.com</strong>.
+    <p class="note">
+      For mixed bundles, please include your scent choices during checkout if PayPal gives that option,
+      or email them to <strong>lathisoap@gmail.com</strong>.
     </p>
   </div>
 
