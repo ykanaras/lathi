@@ -1,0 +1,158 @@
+:root {
+  --green: #214d2b;
+  --sage: #cfd8bd;
+  --cream: #fbf8ed;
+  --text: #2d2d2d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--cream);
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 220px;
+}
+
+nav {
+  background: var(--green);
+  text-align: center;
+  padding: 14px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url("image1.jpeg") center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 700px;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h1, h2, h3 {
+  color: var(--green);
+}
+
+.hero h1 {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.center {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.price-box {
+  background: var(--sage);
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.farm-bg {
+  background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)),
+    url("image3.jpeg") center/cover no-repeat;
+  border-radius: 18px;
+  padding: 55px 25px;
+}
+
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
