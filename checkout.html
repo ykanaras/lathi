@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Checkout | Lathi Soap</title>
+  <meta name="description" content="Checkout for handmade Greek olive oil soap from Lathi Soap.">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAV8G4yaUPBLrOnfq9V-P3yVW0bPYqWQCj0mOvDuFU14LGY0H-R8PHR5h3snTvbEi2UrcwZRP5_cd8tzk&components=hosted-buttons&enable-funding=venmo&currency=USD">
+  </script>
+</head>
+
+<body>
+
+<header>
+  <img src="lathi logo.jpg" alt="Lathi Soap Logo">
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="shop.html">Shop</a>
+  <a href="checkout.html">Checkout</a>
+</nav>
+
+<section>
+  <h2>Checkout</h2>
+
+  <p class="center">
+    Choose your order option below and checkout securely through PayPal.
+  </p>
+
+  <div class="checkout-grid">
+
+    <div class="card">
+      <h3>Single Soap</h3>
+      <p>$6.50 per soap</p>
+      <p>$5.99 flat-rate shipping</p>
+      <p class="price">Total: $12.49</p>
+
+      <div id="paypal-container-XGMF5RPPQ8G36"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "XGMF5RPPQ8G36",
+        }).render("#paypal-container-XGMF5RPPQ8G36");
+      </script>
+
+      <p class="note">
+        Please include your scent choice during checkout, or email it to
+        <strong>lathisoap@gmail.com</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>5 Soap Bundle</h3>
+      <p>5 soaps for $30</p>
+      <p>$5.99 flat-rate shipping</p>
+      <p class="price">Total: $35.99</p>
+
+      <div id="paypal-container-BUNDLE-CHECKOUT"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "REPLACE_WITH_BUNDLE_BUTTON_ID",
+        }).render("#paypal-container-BUNDLE-CHECKOUT");
+      </script>
+
+      <p class="note">
+        Please include your 5 scent choices during checkout, or email them to
+        <strong>lathisoap@gmail.com</strong>.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="price-box">
+    <h3>Available Scents</h3>
+    <p>Lavender • Rose • Citrus • Gardenia • Coconut Vanilla</p>
+
+    <a class="button" href="mailto:lathisoap@gmail.com?subject=Lathi Soap Order">
+      Email Order Details
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  <p>Lathi Soap | Greek Olive Oil Soap</p>
+  <p>Rooted in Sparta. Pure Soap, Naturally.</p>
+</footer>
+
+</body>
+</html>
