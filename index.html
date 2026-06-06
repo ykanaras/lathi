@@ -4,269 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lathi Soap | Greek Olive Oil Soap</title>
-  <style>
-    :root {
-      --green: #214d2b;
-      --sage: #cfd8bd;
-      --cream: #fbf8ed;
-      --text: #2d2d2d;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Georgia, serif;
-      color: var(--text);
-      background: var(--cream);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--cream);
-      text-align: center;
-      padding: 20px;
-    }
-
-    header img {
-      max-width: 220px;
-    }
-
-    nav {
-      background: var(--green);
-      padding: 12px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .hero {
-      min-height: 75vh;
-      background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        url("image1.jpeg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 40px 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 22px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--green);
-      font-size: 34px;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .about {
-      text-align: center;
-      max-width: 850px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 14px;
-      padding: 25px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,.08);
-    }
-
-    .card h3 {
-      color: var(--green);
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
-
-    .price-box {
-      background: var(--sage);
-      border-radius: 14px;
-      padding: 30px;
-      text-align: center;
-      margin-top: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--green);
-      color: white;
-      padding: 14px 28px;
-      border-radius: 30px;
-      text-decoration: none;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .farm {
-      background: linear-gradient(rgba(255,255,255,.82), rgba(255,255,255,.82)),
-        url("image3.jpeg") center/cover no-repeat;
-      border-radius: 18px;
-      padding: 50px 25px;
-      text-align: center;
-    }
-
-    footer {
-      background: var(--green);
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 18px;
-      }
-
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header>
-    <img src="lathi logo.jpg" alt="Lathi Soap Logo">
-  </header>
+<header>
+  <img src="lathi logo.jpg" alt="Lathi Soap Logo">
+</header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#shop">Shop</a>
-    <a href="#story">Our Story</a>
-    <a href="#contact">Order</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html">Order</a>
+</nav>
 
-  <div class="hero">
-    <div>
-      <h1>Greek Olive Oil Soap</h1>
-      <p>Handmade soap crafted with olive oil from our family farm in Sparta, Greece.</p>
-      <a class="button" href="#shop">Shop Soaps</a>
-    </div>
+<div class="hero">
+  <div>
+    <h1>Greek Olive Oil Soap</h1>
+    <p>Handmade soap crafted with olive oil from our family farm in Sparta, Greece.</p>
+    <a class="button" href="shop.html">Shop Soaps</a>
   </div>
+</div>
 
-  <section id="about" class="about">
-    <h2>About Lathi Soap</h2>
+<section>
+  <div class="center">
+    <h2>Rooted in Sparta. Made with Care.</h2>
     <p>
       Lathi Soap is a local, family-owned business creating handmade olive oil soaps
-      inspired by Greek tradition. Our soaps are made with care using olive oil from
+      inspired by Greek tradition. Each bar is made with care using olive oil from
       our family’s farm in Sparta, Greece.
     </p>
-  </section>
+    <a class="button" href="about.html">Our Story</a>
+  </div>
+</section>
 
-  <section id="shop">
-    <h2>Shop Our Soaps</h2>
-
-    <div class="products">
-      <div class="card">
-        <h3>Lavender</h3>
-        <p>Calming lavender soap that gently cleanses while leaving skin soft, refreshed, and lightly scented.</p>
-      </div>
-
-      <div class="card">
-        <h3>Rose</h3>
-        <p>A delicate rose-scented bar that leaves skin feeling smooth, soft, and refreshed.</p>
-      </div>
-
-      <div class="card">
-        <h3>Citrus</h3>
-        <p>Bright and energizing citrus soap with a crisp, zesty scent and gentle cleanse.</p>
-      </div>
-
-      <div class="card">
-        <h3>Gardenia</h3>
-        <p>Luxurious floral soap with the elegant scent of blooming gardenias.</p>
-      </div>
-
-      <div class="card">
-        <h3>Coconut Vanilla</h3>
-        <p>A warm blend of creamy coconut and sweet vanilla for a cozy tropical scent.</p>
-      </div>
-    </div>
-
-    <div class="price-box">
-      <h3>Pricing</h3>
-      <p><strong>Single Bar:</strong> $6.50</p>
-      <p><strong>Bundle:</strong> 5 bars for $30</p>
-      <p><strong>Shipping:</strong> Flat rate $5.99</p>
-
-      <a class="button" href="https://www.paypal.com/paypalme/lathisoap" target="_blank">
-        Pay with PayPal
-      </a>
-
-      <p style="margin-top:15px;">
-        Or send payment through PayPal to: <strong>lathisoap@gmail.com</strong>
-      </p>
-    </div>
-  </section>
-
-  <section id="story">
-    <div class="farm">
-      <h2>Our Family Olive Farm</h2>
-      <p>
-        The olive oil used in our soaps comes from our family olive farm in Sparta,
-        Greece. This farm has been passed down through our family for centuries,
-        carrying with it generations of tradition, care, and connection to the land.
-      </p>
-      <p>
-        Every bar of Lathi Soap is rooted in that heritage and made to bring a piece
-        of Greece into your everyday routine.
-      </p>
-    </div>
-  </section>
-
-  <section id="contact" class="about">
-    <h2>How to Order</h2>
-    <p>
-      To place an order, send us your soap choices and shipping information.
-      Payments can be made through PayPal using:
-    </p>
-    <p><strong>lathisoap@gmail.com</strong></p>
-    <a class="button" href="mailto:lathisoap@gmail.com">Email Us to Order</a>
-  </section>
-
-  <footer>
-    <p>Lathi Soap | Greek Olive Oil Soap</p>
-    <p>Rooted in Sparta. Pure Soap, Naturally.</p>
-  </footer>
+<footer>
+  <p>Lathi Soap | Greek Olive Oil Soap</p>
+  <p>Rooted in Sparta. Pure Soap, Naturally.</p>
+</footer>
 
 </body>
 </html>
