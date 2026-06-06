@@ -4,7 +4,6 @@
   --cream: #fbf8ed;
   --white: #ffffff;
   --text: #2d2d2d;
-  --gold: #b59b5b;
 }
 
 * {
@@ -21,7 +20,6 @@ body {
 }
 
 header {
-  background: var(--cream);
   text-align: center;
   padding: 20px;
 }
@@ -41,10 +39,6 @@ nav a {
   text-decoration: none;
   margin: 0 14px;
   font-weight: bold;
-}
-
-nav a:hover {
-  color: var(--sage);
 }
 
 .hero {
@@ -104,10 +98,6 @@ h2 {
   font-weight: bold;
 }
 
-.button:hover {
-  background: #18391f;
-}
-
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -121,11 +111,6 @@ h2 {
   padding: 24px;
   text-align: center;
   box-shadow: 0 4px 14px rgba(0,0,0,.08);
-}
-
-.card h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .product-img {
@@ -159,13 +144,6 @@ h2 {
   padding: 55px 25px;
 }
 
-.checkout-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
-  margin-top: 35px;
-}
-
 .note {
   font-size: 15px;
   margin-top: 12px;
@@ -177,10 +155,6 @@ footer {
   text-align: center;
   padding: 25px;
   margin-top: 40px;
-}
-
-footer p {
-  margin: 4px 0;
 }
 
 @media (max-width: 600px) {
