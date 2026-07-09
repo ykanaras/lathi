@@ -8,8 +8,6 @@
   <meta name="description" content="Shop handmade Greek olive oil soaps from Lathi Soap. Lavender, Rose, Citrus, Gardenia, and Coconut Vanilla.">
 
   <link rel="stylesheet" href="style.css" />
-
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAV8G4yaUPBLrOnfq9V-P3yVW0bPYqWQCj0mOvDuFU14LGY0H-R8PHR5h3snTvbEi2UrcwZRP5_cd8tzk&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 </head>
 
 <body>
@@ -30,8 +28,17 @@
 
   <p class="center">
     Each bar is handmade with extra virgin organic olive oil from our family farm in Sparta, Greece. 100% fragrance free!
-    Select your favorite scent and checkout securely through PayPal.
+    Add multiple items to your cart and checkout securely through PayPal.
   </p>
+
+  <div class="center" style="margin-bottom: 25px;">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="lathisoap@gmail.com">
+      <input type="hidden" name="display" value="1">
+      <input type="submit" value="View Cart / Checkout">
+    </form>
+  </div>
 
   <div class="products">
 
@@ -41,12 +48,20 @@
       <p>Calming lavender soap that gently cleanses while leaving skin soft, refreshed, and lightly scented.</p>
       <p class="price">$6.50</p>
 
-      <div id="paypal-container-NXPFJQLMNW6WS"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "NXPFJQLMNW6WS"
-        }).render("#paypal-container-NXPFJQLMNW6WS");
-      </script>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="lathisoap@gmail.com">
+        <input type="hidden" name="item_name" value="Lavender Soap">
+        <input type="hidden" name="amount" value="6.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="5.99">
+        <input type="hidden" name="add" value="1">
+
+        <label>Qty:</label>
+        <input type="number" name="quantity" value="1" min="1">
+
+        <input type="submit" value="Add to Cart">
+      </form>
     </div>
 
     <div class="card">
@@ -55,12 +70,20 @@
       <p>A delicate rose-scented bar that leaves skin feeling smooth, soft, and refreshed.</p>
       <p class="price">$6.50</p>
 
-      <div id="paypal-container-928GVH3J2T75E"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "928GVH3J2T75E"
-        }).render("#paypal-container-928GVH3J2T75E");
-      </script>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="lathisoap@gmail.com">
+        <input type="hidden" name="item_name" value="Rose Soap">
+        <input type="hidden" name="amount" value="6.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="5.99">
+        <input type="hidden" name="add" value="1">
+
+        <label>Qty:</label>
+        <input type="number" name="quantity" value="1" min="1">
+
+        <input type="submit" value="Add to Cart">
+      </form>
     </div>
 
     <div class="card">
@@ -69,12 +92,20 @@
       <p>Bright and energizing citrus soap with a crisp, zesty scent and gentle cleanse.</p>
       <p class="price">$6.50</p>
 
-      <div id="paypal-container-DR3HECN9JTNJQ"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "DR3HECN9JTNJQ"
-        }).render("#paypal-container-DR3HECN9JTNJQ");
-      </script>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="lathisoap@gmail.com">
+        <input type="hidden" name="item_name" value="Citrus Soap">
+        <input type="hidden" name="amount" value="6.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="5.99">
+        <input type="hidden" name="add" value="1">
+
+        <label>Qty:</label>
+        <input type="number" name="quantity" value="1" min="1">
+
+        <input type="submit" value="Add to Cart">
+      </form>
     </div>
 
     <div class="card">
@@ -83,12 +114,20 @@
       <p>Luxurious floral soap with the elegant scent of blooming gardenias.</p>
       <p class="price">$6.50</p>
 
-      <div id="paypal-container-UAGCMUS64WBLA"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "UAGCMUS64WBLA"
-        }).render("#paypal-container-UAGCMUS64WBLA");
-      </script>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="lathisoap@gmail.com">
+        <input type="hidden" name="item_name" value="Gardenia Soap">
+        <input type="hidden" name="amount" value="6.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="5.99">
+        <input type="hidden" name="add" value="1">
+
+        <label>Qty:</label>
+        <input type="number" name="quantity" value="1" min="1">
+
+        <input type="submit" value="Add to Cart">
+      </form>
     </div>
 
     <div class="card">
@@ -97,12 +136,20 @@
       <p>A warm blend of creamy coconut and sweet vanilla for a cozy tropical scent.</p>
       <p class="price">$6.50</p>
 
-      <div id="paypal-container-CS2FHZ7598MW4"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "CS2FHZ7598MW4"
-        }).render("#paypal-container-CS2FHZ7598MW4");
-      </script>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="lathisoap@gmail.com">
+        <input type="hidden" name="item_name" value="Coconut Vanilla Soap">
+        <input type="hidden" name="amount" value="6.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="5.99">
+        <input type="hidden" name="add" value="1">
+
+        <label>Qty:</label>
+        <input type="number" name="quantity" value="1" min="1">
+
+        <input type="submit" value="Add to Cart">
+      </form>
     </div>
 
   </div>
@@ -113,12 +160,20 @@
     <p>Mix and match your favorite scents.</p>
     <p>$5.99 flat-rate shipping</p>
 
-    <div id="paypal-container-V76PR38U5NMBE"></div>
-    <script>
-      paypal.HostedButtons({
-        hostedButtonId: "V76PR38U5NMBE"
-      }).render("#paypal-container-V76PR38U5NMBE");
-    </script>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="lathisoap@gmail.com">
+      <input type="hidden" name="item_name" value="5 Soap Bundle">
+      <input type="hidden" name="amount" value="28.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="shipping" value="5.99">
+      <input type="hidden" name="add" value="1">
+
+      <label>Qty:</label>
+      <input type="number" name="quantity" value="1" min="1">
+
+      <input type="submit" value="Add Bundle to Cart">
+    </form>
 
     <p class="note">
       For mixed bundles, please include your scent choices during checkout if PayPal gives that option,
