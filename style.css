@@ -137,6 +137,12 @@ h2 {
   margin-top: 35px;
 }
 
+.price-box .product-img {
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
 .farm-bg {
   background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)),
     url("image3.jpeg") center/cover no-repeat;
