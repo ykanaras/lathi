@@ -24,43 +24,161 @@
 <section>
   <h2>Shop Handmade Greek Olive Oil Soaps</h2>
   <p class="center">Each bar is handmade with extra-virgin olive oil from our family farm in Sparta, Greece. Add multiple items to your cart and checkout securely through PayPal.</p>
-  <div class="center" style="margin-bottom: 25px;">
-    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-      <input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="display" value="1"><input type="submit" value="View Cart / Checkout">
-    </form>
+  <div class="price-box">
+    <img src="bundle.jpg.png" alt="5 Soap Bundle Deal" class="product-img">
+    <h3>Mix & Match Bundle Deal</h3>
+    <p><strong>Choose any 5 soaps for $30 — automatically applied in your cart.</strong></p>
+    <p>No bundle code or separate product needed. Add the scents you love and we'll apply the savings for every group of five.</p>
+    <p>$5.99 flat-rate shipping per order.</p>
   </div>
 
-  <div class="price-box">
-    <img src="bundle.jpg.png" alt="Bundle Deal" class="product-img"><h3>Bundle Deal</h3><p><strong>5 soaps for $30</strong></p><p>Mix and match your favorite scents.</p><p>$5.99 flat-rate shipping</p>
-    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="5 Soap Bundle"><input type="hidden" name="amount" value="30.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add Bundle to Cart"></form>
-    <p class="note">For mixed bundles, please include your scent choices during checkout if PayPal gives that option, or email them to <strong>lathisoap@gmail.com</strong>.</p>
+  <div id="lathi-cart" class="price-box" style="margin-top:25px;">
+    <h3>Your Cart</h3>
+    <div id="cart-items"><p>Your cart is empty.</p></div>
+    <div id="cart-summary" style="display:none;">
+      <p>Regular subtotal: <span id="regular-subtotal">$0.00</span></p>
+      <p id="bundle-savings-row"><strong>5-for-$30 savings: <span id="bundle-savings">-$0.00</span></strong></p>
+      <p>Shipping: <span>$5.99</span></p>
+      <p class="price"><strong>Total: <span id="cart-total">$5.99</span></strong></p>
+      <button type="button" id="paypal-checkout">Checkout securely with PayPal</button>
+      <button type="button" id="clear-cart" style="margin-left:8px;">Clear Cart</button>
+    </div>
   </div>
 
   <div style="margin-top: 40px; padding: 28px 20px; background: #f4e2c4; border-radius: 16px;">
     <h2 style="color: #9b4a16; margin-bottom: 8px;">Limited-Time Fall Collection</h2>
     <p class="center">Five cozy seasonal scents, handcrafted with extra-virgin olive oil from our family farm in Sparta, Greece. Mix and match any five soaps for $30.</p>
     <div class="products">
-      <div class="card"><img src="fall-autumn-spice.jpg" alt="Harvest Greek olive oil soap" class="product-img"><h3>Harvest</h3><p>A warm, comforting fall fragrance inspired by crisp air, colorful leaves, and cozy days at home.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Harvest Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-      <div class="card"><img src="fall-harvest.jpg" alt="Autumn Spice Greek olive oil soap" class="product-img"><h3>Autumn Spice</h3><p>A festive spice-inspired scent with the warm, inviting feeling of sweater weather and the autumn season.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Autumn Spice Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-      <div class="card"><img src="fall-cinnamon-woods.jpg" alt="Cinnamon Woods Greek olive oil soap" class="product-img"><h3>Cinnamon Woods</h3><p>Warm cinnamon meets a deeper woodland-inspired fragrance for a rich, rustic, and comforting fall scent.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Cinnamon Woods Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-      <div class="card"><img src="fall-evergreen.jpg" alt="Evergreen Greek olive oil soap" class="product-img"><h3>Evergreen</h3><p>A fresh, clean, forest-inspired fragrance that brings the peaceful feeling of the outdoors into your daily routine.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Evergreen Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-      <div class="card"><img src="fall-apple-crisp.jpg" alt="Apple Crisp Greek olive oil soap" class="product-img"><h3>Apple Crisp</h3><p>A sweet, warm, bakery-inspired fragrance that evokes freshly baked apples on a cool fall day.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Apple Crisp Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+      <div class="card"><img src="fall-autumn-spice.jpg" alt="Harvest Greek olive oil soap" class="product-img"><h3>Harvest</h3><p>A warm, comforting fall fragrance inspired by crisp air, colorful leaves, and cozy days at home.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Harvest Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+      <div class="card"><img src="fall-harvest.jpg" alt="Autumn Spice Greek olive oil soap" class="product-img"><h3>Autumn Spice</h3><p>A festive spice-inspired scent with the warm, inviting feeling of sweater weather and the autumn season.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Autumn Spice Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+      <div class="card"><img src="fall-cinnamon-woods.jpg" alt="Cinnamon Woods Greek olive oil soap" class="product-img"><h3>Cinnamon Woods</h3><p>Warm cinnamon meets a deeper woodland-inspired fragrance for a rich, rustic, and comforting fall scent.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Cinnamon Woods Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+      <div class="card"><img src="fall-evergreen.jpg" alt="Evergreen Greek olive oil soap" class="product-img"><h3>Evergreen</h3><p>A fresh, clean, forest-inspired fragrance that brings the peaceful feeling of the outdoors into your daily routine.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Evergreen Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+      <div class="card"><img src="fall-apple-crisp.jpg" alt="Apple Crisp Greek olive oil soap" class="product-img"><h3>Apple Crisp</h3><p>A sweet, warm, bakery-inspired fragrance that evokes freshly baked apples on a cool fall day.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Apple Crisp Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
     </div>
   </div>
 
   <h2 style="margin-top: 55px;">More Lathi Soap Favorites</h2>
   <div class="products">
-    <div class="card"><img src="soap-lavender.jpg.png" alt="Lavender Soap" class="product-img"><h3>Lavender</h3><p>A timeless herbal-floral scent with a clean, calming aroma. A lovely choice for an evening shower or a quiet self-care moment.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Lavender Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-    <div class="card"><img src="soap-palmarosa.jpg.png" alt="Palmarosa Bloom Soap" class="product-img"><h3>Palmarosa Bloom</h3><p>A soft, fresh floral scent with an elegant garden-inspired character. Delicate and inviting, it is a beautiful choice for floral-scent lovers.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Palmarosa Bloom Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-    <div class="card"><img src="soap-citrus.jpg.png" alt="Citrus Soap" class="product-img"><h3>Citrus</h3><p>A bright and cheerful citrus scent with a fresh, zesty character. The perfect bar for starting your morning with an uplifting burst of fragrance.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Citrus Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-    <div class="card"><img src="soap-gardenia.jpg.png" alt="Gardenia Soap" class="product-img"><h3>Gardenia</h3><p>A rich white-floral fragrance inspired by blooming gardenias. Elegant, fresh, and beautifully fragrant for anyone who loves classic florals.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Gardenia Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-    <div class="card"><img src="coconut-soap.jpg.png" alt="Coconut Soap" class="product-img"><h3>Coconut</h3><p>A creamy tropical coconut scent with a warm, lightly sweet finish. A relaxing everyday favorite that brings a little island escape to your shower.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Coconut Soap"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-    <div class="card"><img src="soap-melon.jpg.png" alt="Melon Splash Soap" class="product-img"><h3>Melon Splash</h3><p>A refreshing blend of crisp cucumber and sweet, juicy cantaloupe. Clean, fruity, and refreshing - perfect for a bright everyday shower.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="Melon Splash"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
-    <div class="card"><img src="soap-jasmine.jpg.png" alt="White Jasmine Soap" class="product-img"><h3>White Jasmine</h3><p>A soft and graceful floral scent with the delicate sweetness of jasmine blossoms. Fresh, feminine, and pleasantly fragrant without feeling too heavy.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_cart"><input type="hidden" name="business" value="lathisoap@gmail.com"><input type="hidden" name="item_name" value="White Jasmine"><input type="hidden" name="amount" value="7.00"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.99"><input type="hidden" name="add" value="1"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="soap-lavender.jpg.png" alt="Lavender Soap" class="product-img"><h3>Lavender</h3><p>A timeless herbal-floral scent with a clean, calming aroma. A lovely choice for an evening shower or a quiet self-care moment.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Lavender Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="soap-palmarosa.jpg.png" alt="Palmarosa Bloom Soap" class="product-img"><h3>Palmarosa Bloom</h3><p>A soft, fresh floral scent with an elegant garden-inspired character. Delicate and inviting, it is a beautiful choice for floral-scent lovers.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Palmarosa Bloom Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="soap-citrus.jpg.png" alt="Citrus Soap" class="product-img"><h3>Citrus</h3><p>A bright and cheerful citrus scent with a fresh, zesty character. The perfect bar for starting your morning with an uplifting burst of fragrance.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Citrus Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="soap-gardenia.jpg.png" alt="Gardenia Soap" class="product-img"><h3>Gardenia</h3><p>A rich white-floral fragrance inspired by blooming gardenias. Elegant, fresh, and beautifully fragrant for anyone who loves classic florals.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Gardenia Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="coconut-soap.jpg.png" alt="Coconut Soap" class="product-img"><h3>Coconut</h3><p>A creamy tropical coconut scent with a warm, lightly sweet finish. A relaxing everyday favorite that brings a little island escape to your shower.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Coconut Soap"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="soap-melon.jpg.png" alt="Melon Splash Soap" class="product-img"><h3>Melon Splash</h3><p>A refreshing blend of crisp cucumber and sweet, juicy cantaloupe. Clean, fruity, and refreshing - perfect for a bright everyday shower.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="Melon Splash"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
+    <div class="card"><img src="soap-jasmine.jpg.png" alt="White Jasmine Soap" class="product-img"><h3>White Jasmine</h3><p>A soft and graceful floral scent with the delicate sweetness of jasmine blossoms. Fresh, feminine, and pleasantly fragrant without feeling too heavy.</p><p>Handmade with extra-virgin olive oil from our family farm in Sparta, Greece.</p><p class="price">$7.00</p><form class="soap-cart-form" data-soap="White Jasmine"><label>Qty:</label><input type="number" name="quantity" value="1" min="1"><input type="submit" value="Add to Cart"></form></div>
   </div>
 
 
 </section>
 <footer><p>Lathi Soap | Greek Olive Oil Soap</p><p>Rooted in Sparta. Pure Soap, Naturally.</p></footer>
+
+<script>
+(function () {
+  const CART_KEY = 'lathiSoapCartV1';
+  const UNIT_PRICE = 7;
+  const BUNDLE_QTY = 5;
+  const BUNDLE_PRICE = 30;
+  const SHIPPING = 5.99;
+
+  function getCart() {
+    try { return JSON.parse(localStorage.getItem(CART_KEY)) || {}; } catch (e) { return {}; }
+  }
+  function saveCart(cart) { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
+
+  function totals(cart) {
+    const qty = Object.values(cart).reduce((sum, n) => sum + Number(n || 0), 0);
+    const regular = qty * UNIT_PRICE;
+    const bundles = Math.floor(qty / BUNDLE_QTY);
+    const remainder = qty % BUNDLE_QTY;
+    const discounted = bundles * BUNDLE_PRICE + remainder * UNIT_PRICE;
+    return { qty, regular, bundles, discounted, savings: regular - discounted, total: discounted + (qty ? SHIPPING : 0) };
+  }
+
+  function renderCart() {
+    const cart = getCart();
+    const t = totals(cart);
+    const items = document.getElementById('cart-items');
+    const summary = document.getElementById('cart-summary');
+    if (!items || !summary) return;
+    if (!t.qty) {
+      items.innerHTML = '<p>Your cart is empty.</p>';
+      summary.style.display = 'none';
+      return;
+    }
+    items.innerHTML = Object.entries(cart).filter(([,q]) => q > 0).map(([name,q]) =>
+      '<p><strong>' + name.replace(' Soap','') + '</strong> × ' + q +
+      ' <button type="button" class="remove-one" data-name="' + name.replace(/"/g,'&quot;') + '">Remove one</button></p>'
+    ).join('');
+    summary.style.display = 'block';
+    document.getElementById('regular-subtotal').textContent = '
+</html>
+ + t.regular.toFixed(2);
+    document.getElementById('bundle-savings').textContent = '-
+</html>
+ + t.savings.toFixed(2);
+    document.getElementById('bundle-savings-row').style.display = t.savings ? 'block' : 'none';
+    document.getElementById('cart-total').textContent = '
+</html>
+ + t.total.toFixed(2);
+    document.querySelectorAll('.remove-one').forEach(btn => btn.addEventListener('click', () => {
+      const next = getCart(), name = btn.dataset.name;
+      next[name] = Math.max(0, Number(next[name] || 0) - 1);
+      if (!next[name]) delete next[name];
+      saveCart(next); renderCart();
+    }));
+  }
+
+  document.querySelectorAll('.soap-cart-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const qty = Math.max(1, parseInt(form.querySelector('[name="quantity"]').value || '1', 10));
+      const cart = getCart(), name = form.dataset.soap;
+      cart[name] = Number(cart[name] || 0) + qty;
+      saveCart(cart); renderCart();
+      document.getElementById('lathi-cart').scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  });
+
+  document.getElementById('clear-cart')?.addEventListener('click', () => { localStorage.removeItem(CART_KEY); renderCart(); });
+
+  document.getElementById('paypal-checkout')?.addEventListener('click', function() {
+    const cart = getCart(), t = totals(cart);
+    if (!t.qty) return;
+
+    // PayPal receives one cart line per scent. Discount is distributed across the bars
+    // so PayPal's item total exactly matches the site's automatic bundle price.
+    const perBarDiscount = t.savings / t.qty;
+    const discountedUnit = UNIT_PRICE - perBarDiscount;
+    const form = document.createElement('form');
+    form.method = 'post';
+    form.action = 'https://www.paypal.com/cgi-bin/webscr';
+    form.style.display = 'none';
+
+    const fields = {cmd:'_cart', upload:'1', business:'lathisoap@gmail.com', currency_code:'USD', handling_cart:SHIPPING.toFixed(2)};
+    Object.entries(fields).forEach(([name,value]) => {
+      const i=document.createElement('input'); i.type='hidden'; i.name=name; i.value=value; form.appendChild(i);
+    });
+
+    let i = 1;
+    const entries = Object.entries(cart).filter(([,q]) => q > 0);
+    // Use exact cart total: put any rounding remainder into the final line.
+    let assigned = 0;
+    entries.forEach(([name,q], idx) => {
+      const isLast = idx === entries.length - 1;
+      const lineTarget = isLast ? t.discounted - assigned : Math.round(discountedUnit * q * 100) / 100;
+      assigned += lineTarget;
+      const unit = lineTarget / q;
+      [[`item_name_${i}`,name],[`amount_${i}`,unit.toFixed(2)],[`quantity_${i}`,q]].forEach(([n,v]) => {
+        const input=document.createElement('input'); input.type='hidden'; input.name=n; input.value=v; form.appendChild(input);
+      });
+      i++;
+    });
+    document.body.appendChild(form);
+    form.submit();
+  });
+
+  renderCart();
+})();
+</script>
 </body>
 </html>
